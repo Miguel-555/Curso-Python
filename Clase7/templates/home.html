@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+</head>
+<body>
+    <a href="/about">Acerca de Nosotros</a>
+    <a href="/acerca">Acerca de </a>
+    <div class="container">
+        <h1>Mi pagina de inicio</h1>
+        <div class="card">
+            <h2>Usuarios</h2>
+            <p>{{datos.usuarios}}</p>
+        </div>
+        <div class="card">
+            <h2>Ventas</h2>
+            <p>{{datos.ventas}}</p>
+        </div>
+        <div class="card">
+            <h2>Visitas</h2>
+            <p>{{datos.visitas}}</p>
+    </div>
+</body>
